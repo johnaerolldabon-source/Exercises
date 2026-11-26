@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5 | Campus Tech Club</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header class="container text-center">
+        <h1>Campus Tech Club</h1>
+        <nav aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#activities">Activities</a>
+            <a href="#login">Log In</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="about" class="card text-center">
+            <h2>About the Club</h2>
+            <p>Learn to code, build projects, and meet other students.</p>
+            <a class="btn" href="#login">Log In</a>
+        </section>
+
+        <section id="activities">
+            <h2>Activities</h2>
+            <div class="row">
+                <article class="card">
+                    <h3>Coding Workshops</h3>
+                    <p>Practice HTML and CSS by building small web pages.</p>
+                </article>
+                <article class="card">
+                    <h3>Project Meetups</h3>
+                    <p>Share project ideas and find classmates to work with.</p>
+                </article>
+                <article class="card">
+                    <h3>Study Sessions</h3>
+                    <p>Work through programming exercises with other members.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="login" class="card">
+            <div class="card-header text-center">
+                <h2>Member Login</h2>
+            </div>
+
+            <div class="card-body">
+                <div class="login-fields">
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" disabled>
+                    </div>
+
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" disabled>
+                    </div>
+
+                    <button type="button" class="btn" disabled>Log In</button>
+                </div>
+
+                <p class="form-note">Login preview</p>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center">
+        <p>Campus Tech Club</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,156 @@
+﻿body {
+    margin: 0;
+    font: 1rem/1.55 system-ui, sans-serif;
+    color: #182a44;
+    background: #f1f5fb;
+}
+
+.container {
+    width: min(920px, calc(100% - 32px));
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+header {
+    padding: 24px 0;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    margin: 0 0 12px;
+}
+
+h1 {
+    font-size: 1.35rem;
+}
+
+nav, .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+nav {
+    justify-content: center;
+}
+
+nav a {
+    color: #24548f;
+    font-weight: 600;
+    text-underline-offset: 4px;
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+.card {
+    padding: 24px;
+    background: white;
+    border: 1px solid #d3dfed;
+    border-radius: 16px;
+}
+
+#about {
+    padding: clamp(32px, 8vw, 72px) 20px;
+    color: white;
+    background: linear-gradient(125deg, #102b50, #174b78 65%, #126658);
+    border: 0;
+}
+
+#about h2 {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+}
+
+#about .btn {
+    margin-top: 8px;
+    color: #163b65;
+    background: white;
+}
+
+.row .card {
+    flex: 1 1 200px;
+    border-top: 3px solid #26746a;
+}
+
+.row p {
+    margin: 0;
+    color: #435672;
+}
+
+#login {
+    max-width: 400px;
+    margin-inline: auto;
+    padding: clamp(20px, 5vw, 36px);
+    box-shadow: 0 12px 32px rgb(16 43 80 / 8%);
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 12px;
+    margin: 5px 0 16px;
+    border: 1px solid #849ab3;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 8px;
+    background: #24548f;
+    color: white;
+    font: inherit;
+    font-weight: 650;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login-fields .btn {
+    width: 100%;
+}
+
+.btn:not(:disabled):hover {
+    background: #183c68;
+}
+
+.btn:disabled {
+    opacity: 0.65;
+    cursor: default;
+}
+
+#about .btn:hover {
+    background: #e8f1fd;
+}
+
+:focus-visible {
+    outline: 3px solid #24548f;
+    outline-offset: 3px;
+}
+
+#about .btn:focus-visible {
+    outline-color: white;
+}
+
+.form-note, footer {
+    color: #435672;
+    font-size: 0.9rem;
+}
+
+.form-note {
+    margin-bottom: 0;
+}
+
+footer {
+    padding: 12px 16px;
+}
